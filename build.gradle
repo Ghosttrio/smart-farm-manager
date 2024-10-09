@@ -26,15 +26,30 @@ repositories {
 }
 
 dependencies {
+	// jpa
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-	implementation 'org.springframework.boot:spring-boot-starter-web'
+	// kotlin
 	implementation 'com.fasterxml.jackson.module:jackson-module-kotlin'
 	implementation 'org.jetbrains.kotlin:kotlin-reflect'
+	// spring web
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	// lombok
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
-	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	// junit
 	testImplementation 'org.jetbrains.kotlin:kotlin-test-junit5'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+	// swagger
+	implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.0.2'
+	// spring batch
+	implementation 'org.springframework.boot:spring-boot-starter-batch'
+	// slack
+	implementation("com.slack.api:bolt:1.18.0")
+	implementation("com.slack.api:bolt-servlet:1.18.0")
+	implementation("com.slack.api:bolt-jetty:1.18.0")
+	// itext
+	implementation 'com.itextpdf:itext7-core:7.2.4'
 }
 
 kotlin {

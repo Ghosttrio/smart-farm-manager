@@ -16,7 +16,7 @@ import lombok.NoArgsConstructor
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @AllArgsConstructor
 @Table(name = "greenhouse")
-class GreenHouse(
+class Greenhouse(
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     val id: Long? = null,
     val name: String,
@@ -24,8 +24,8 @@ class GreenHouse(
     val area: Double
 ) : BaseTime() {
     companion object {
-        fun create(name: String, location: String, area: Double): GreenHouse {
-            return GreenHouse(name = name, location = location, area = area)
+        fun create(name: String, location: String, area: Double): Greenhouse {
+            return Greenhouse(name = name, location = location, area = area)
         }
     }
 }

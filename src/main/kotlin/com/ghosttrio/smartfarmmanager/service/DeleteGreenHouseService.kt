@@ -1,12 +1,12 @@
 package com.ghosttrio.smartfarmmanager.service
 
-import com.ghosttrio.smartfarmmanager.repository.GreenHouseRepository
+import com.ghosttrio.smartfarmmanager.repository.GreenhouseRepository
 import org.springframework.stereotype.Service
 import org.springframework.transaction.annotation.Transactional
 
 @Service
 class DeleteGreenHouseService(
-    private val greenHouseRepository: GreenHouseRepository
+    private val greenHouseRepository: GreenhouseRepository
 ) {
 
     @Transactional

@@ -15,6 +15,7 @@ class Plant(
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     val id: Long,
     val name: String,
-    val kind: String
+    val kind: String,
+    val greenhouseId: Long
 ) {
 }

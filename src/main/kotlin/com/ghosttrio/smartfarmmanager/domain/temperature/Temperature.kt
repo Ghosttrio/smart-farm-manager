@@ -1,4 +1,4 @@
-package com.ghosttrio.smartfarmmanager.domain
+package com.ghosttrio.smartfarmmanager.domain.temperature
 
 import jakarta.persistence.Entity
 import jakarta.persistence.GeneratedValue
